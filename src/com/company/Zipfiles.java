@@ -7,9 +7,8 @@ import java.util.zip.ZipOutputStream;
 
 public class Zipfiles {
     public void Zip(String zipName,String file, String newFile) {
-
         try (ZipOutputStream zout = new ZipOutputStream(new FileOutputStream(zipName));
-             FileInputStream fis = new FileInputStream(file)) {
+                 FileInputStream fis = new FileInputStream(file)) {
             ZipEntry entry = new ZipEntry(newFile);
             zout.putNextEntry(entry);
             // считываем содержимое файла в массив byte

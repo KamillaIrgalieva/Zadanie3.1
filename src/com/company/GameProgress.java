@@ -1,10 +1,8 @@
 package com.company;
 
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-public class GameProgress implements Serializable{
+public class GameProgress implements Serializable {
         private static final long serialVersionUID = 1L;
 
         private int health;
@@ -28,7 +26,6 @@ public class GameProgress implements Serializable{
                     ", distance=" + distance +
                     '}';
         }
-
 }
 
 
